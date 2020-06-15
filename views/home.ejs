@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<title></title>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <script src="https://kit.fontawesome.com/55ba166d93.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 style="text-align: center; text-transform: initial;"> ToDo App </h1>
+    
+    <form action='/todo' method="POST">
+        <div>
+            <div class="work" >
+                <div class="description"> DESCRIPTION </div>
+                <input class="workinput" type="text" name="work" placeholder="what do yo need to do?"  required>
+            </div>
+            <div class="second">
+                <span>
+                    <select class="categoryinput" name="category" style="border: none;">
+                        <option  value="Choose a category"><p style="font-family:sans-serif;">Choose a category</p></option>
+                        <option  value="Personal">Personal</option>
+                        <option  value="Work">Work</option>
+                        <option  value="School">School</option>
+                        <option  value="Cleaning">Cleaning</option>
+                        <option  value="Other">Other</option>
+                    </select>
+                </span>
+                <span>
+                    <input class="dateinput" type="date"  id="date" name="date" style="border: none;">
+                </span>
+            </div>
+            <div class="third">
+                <button type="submit" class="add"  > Add Task</button>
+                <!-- <button type="submit" class="delete">Delete Task</button> -->
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <ul>
+            <% for(let i of todolist){ %>
+                <li class="content">
+                    <div class="details">
+                        <div style="display: inline-block;" >
+                            <a href="/delete-todo/?id=<%=i._id%>"><i id="delete" class="fas fa-trash-alt"></i></a>
+                        </div>
+                        <div class="worktype"> <%= i.worktype %> </div>
+                        <div class="date"> <%= i.date %> </div>
+                        <div class="category"> <%= i.category %> </div>
+                    </div>
+                    
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+

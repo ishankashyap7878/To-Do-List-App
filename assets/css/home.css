@@ -1,0 +1,84 @@
+body{
+    background-color:lightblue;
+    text-align: center;
+    width:60%;
+    margin-left: 280px;
+    margin-top: 61px;
+}
+ul {
+    list-style-type: none;
+  }
+.work{
+    border: 1px solid grey;
+    background-color: white;
+    height: 45px;
+    border-radius: 5px 5px 5px 5px;
+}
+.details{
+    height: 50px;
+    border: 0.5px solid grey;
+    position: relative;
+    left: -17px;
+}
+.description{
+    width:100%; 
+    margin-left: -349px;
+}
+.workinput{
+    width:98%;
+    height: 54%;
+    border:none;
+}
+.second{
+    border: 1px solid grey;
+    height: 45px; 
+    margin-top: 3px;
+    border-radius: 5px 5px 5px 5px;
+}
+.categoryinput{
+    width: 51%;
+    height: 100%;
+}
+.dateinput{
+    width: 48%;
+    height: 100%;
+}
+.third{
+    height: 60px;
+    margin-top: 2px;
+}
+.add{
+    background-color: red;
+    margin-left: 10px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 6px 6px 6px 6px;
+}
+#delete{
+    position: relative;
+    right: 370px;
+    top: 15px;
+}
+.category{
+    background-color: yellow;
+    position: relative;
+    width: 96px;
+    height: 81%;
+    left: 327px;
+    display: inline-block;
+    top: -57px;
+    border-radius: 5px 5px 5px 5px;
+}
+.worktype{
+    position: relative;
+    width:0%;
+    left: 86px;
+    top: -13px;
+    height: 50%;
+}
+.date{
+    position: relative;
+    width: 78%;
+    left: -199px;
+    top: -12px;
+}
